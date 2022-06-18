@@ -26,16 +26,16 @@ namespace MyApplication
                 dic.Add(r, arr[r]);
             }
             int the_max = dic.Values.Max();
-            int Counter = 0;
-              Dictionary<int, HashSet<char>> final_dic = 
-              new Dictionary<int,HashSet<char>>();
+           
+              Dictionary<int, HashSet<char>> final_dic =   new Dictionary<int,HashSet<char>>();
               HashSet<char> maxs = new HashSet<char>();
             foreach(var r in dic)
             {
         if((int)r.Value == the_max) { maxs.Add(r.Key);  }
+        
             }
          
-            Console.WriteLine(maxs.Min());
+            Console.WriteLine(maxs.Min()+" "+the_max);
         }
     static void Main(string[] args)
      {
